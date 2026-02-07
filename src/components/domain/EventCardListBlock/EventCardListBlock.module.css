@@ -1,0 +1,31 @@
+.cardList {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  column-gap: 90px;
+  row-gap: 40px;
+}
+
+.cardListBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  margin-bottom: 60px;
+  padding: 30px 150px;
+}
+
+.cardListBlock h3 {
+  color: var(--blue-500);
+}
+
+@media (max-width: 768px) {
+  .cardList {
+    flex-direction: column;
+  }
+
+  .cardListBlock {
+    gap: 30px;
+    padding: 30px 20px;
+  }
+}

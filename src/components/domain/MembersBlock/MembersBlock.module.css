@@ -1,0 +1,17 @@
+.membersBlock {
+  padding: 0 150px 60px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 60px;
+}
+
+@media (max-width: 768px) {
+  .membersBlock {
+    padding: 0 20px 60px 20px;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+  }
+}

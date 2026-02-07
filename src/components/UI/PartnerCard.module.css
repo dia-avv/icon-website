@@ -1,0 +1,36 @@
+.partnerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  flex: 1;
+  height: 100%;
+  max-width: 450px;
+  padding: 20px;
+  background-color: var(--blue-50);
+}
+
+.infoSection img {
+  width: 50%;
+}
+
+.infoSection p {
+  color: var(--grey);
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+.partnerCard button {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .partnerCard {
+    max-width: 100%;
+  }
+}

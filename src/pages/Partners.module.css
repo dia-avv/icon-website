@@ -1,0 +1,12 @@
+.partnersBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 0 150px 60px 150px;
+}
+@media (max-width: 768px) {
+  .partnersBlock {
+    padding: 0 20px 60px 20px;
+  }
+}

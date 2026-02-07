@@ -1,0 +1,41 @@
+.carouselBlock {
+  color: var(--blue-500);
+  text-align: center;
+
+  padding: 60px 150px;
+}
+
+.carouselBlock h2 {
+  margin-bottom: 60px;
+}
+
+.carousel {
+  padding: 40px 0;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 100px;
+  width: 200px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition:
+    filter 0.3s,
+    opacity 0.3s;
+}
+
+.logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .carouselBlock {
+    padding: 60px 20px;
+  }
+}

@@ -1,0 +1,28 @@
+.memberCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+  justify-content: end;
+  padding: 30px;
+}
+
+.memberInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  text-align: center;
+}
+
+.memberInfo h5 {
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .memberCard {
+    height: 450px;
+  }
+}

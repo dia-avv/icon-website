@@ -1,0 +1,44 @@
+.missionCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 60px;
+  background-color: var(--white);
+  padding: 40px 80px;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.missionCard h1 {
+  background: linear-gradient(
+    70deg,
+    var(--blue-500) 65%,
+    var(--turquoise-500) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.missionCard p {
+  color: var(--grey);
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .missionCard {
+    flex-direction: column;
+    text-align: left;
+    gap: 30px;
+    padding: 30px 20px;
+    align-items: center;
+  }
+
+  .missionCard p {
+    width: 100%;
+  }
+}

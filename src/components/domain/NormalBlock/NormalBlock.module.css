@@ -1,0 +1,40 @@
+.normalBlock {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 45px;
+  column-gap: 60px;
+
+  padding: 60px 150px;
+
+  color: var(--blue-500);
+}
+
+.normalBlock img {
+  width: 35vw;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textContainer p {
+  color: var(--grey);
+}
+
+@media (max-width: 768px) {
+  .normalBlock {
+    flex-direction: column;
+    text-align: left;
+
+    padding: 60px 20px;
+  }
+
+  .normalBlock img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+.button {
+  background-color: var(--blue-500);
+  padding: 16px 20px;
+  color: var(--white);
+  width: fit-content;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 200ms ease, transform 160ms ease,
+    box-shadow 200ms ease;
+
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--blue-700);
+  transform: translateY(-1px);
+}

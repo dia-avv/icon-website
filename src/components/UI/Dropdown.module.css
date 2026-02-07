@@ -1,0 +1,29 @@
+.dropdownContainer {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.dropdownHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid var(--grey-100);
+  cursor: pointer;
+  color: var(--blue-500);
+  text-align: left;
+  background: none;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.dropdownBody {
+  padding: 10px 15px;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+  color: var(--grey);
+}

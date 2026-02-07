@@ -1,0 +1,135 @@
+.header {
+  background-color: var(--blue-500);
+  padding: 0 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: var(--turquoise-300);
+}
+
+.active {
+  color: var(--turquoise-500);
+  border-bottom: 2px solid var(--turquoise-500);
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: var(--blue-500);
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  z-index: 1000;
+  border-top: 2px solid var(--turquoise-500);
+}
+
+.dropdownContent a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdownContent {
+  display: flex;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+}
+
+.burgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 40px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    background-color: var(--blue-500); /* makes the box */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* optional shadow */
+    height: auto;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .nav.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .dropdownContent {
+    position: static; /* makes it part of the flow */
+    display: flex;
+    flex-direction: column;
+    background: none; /* inherit nav background */
+    gap: 10px;
+  }
+
+  .dropdownContent a {
+    color: var(--white);
+    padding: 5px 10px;
+  }
+}

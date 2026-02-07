@@ -1,0 +1,22 @@
+.imageBlock {
+  padding: 60px 150px;
+
+  color: var(--white);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .imageBlock {
+    padding: 60px 20px;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+}

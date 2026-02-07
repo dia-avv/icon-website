@@ -1,0 +1,10 @@
+.missionBlock {
+  padding: 60px 150px;
+  background-color: var(--blue-500);
+}
+
+@media (max-width: 768px) {
+  .missionBlock {
+    padding: 60px 20px;
+  }
+}
