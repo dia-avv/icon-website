@@ -1,5 +1,4 @@
 import juliab from "../assets/members/juliab.jpg";
-import zuza from "../assets/members/zuza.jpg";
 import andreea from "../assets/members/andreea.jpg";
 import mark from "../assets/members/mark.jpg";
 import zsofi from "../assets/members/zsofi.jpg";
@@ -33,7 +32,6 @@ export const members: Members[] = [
   {
     name: "Zuzanna Kramarz",
     role: "Marketing Lead",
-    photoUrl: zuza,
   },
   {
     name: "Virág Lencse",
