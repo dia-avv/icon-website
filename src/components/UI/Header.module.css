@@ -45,6 +45,26 @@
   flex-direction: column;
 }
 
+.dropdownTrigger {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdownArrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.dropdownArrowOpen {
+  transform: rotate(180deg);
+}
+
 .dropdownContent {
   display: none;
   position: absolute;
@@ -57,6 +77,11 @@
   gap: 20px;
   z-index: 1000;
   border-top: 2px solid var(--turquoise-500);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 
 .dropdownContent a {
@@ -65,8 +90,16 @@
   text-decoration: none;
 }
 
-.dropdown:hover .dropdownContent {
+@media (min-width: 769px) {
+  .dropdown:hover .dropdownContent {
+    display: flex;
+  }
+}
+
+.dropdownOpen .dropdownContent {
   display: flex;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .burger {
@@ -126,6 +159,25 @@
     flex-direction: column;
     background: none; /* inherit nav background */
     gap: 10px;
+    padding: 0;
+    border-top: none;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+    transition:
+      max-height 0.5s ease,
+      opacity 0.5s ease,
+      transform 0.5s ease;
+  }
+
+  .dropdownOpen .dropdownContent {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    padding: 10px 0 0;
   }
 
   .dropdownContent a {
