@@ -11,7 +11,6 @@ import alumni2024 from "../assets/events/alumni2024.jpg";
 import intro2024 from "../assets/events/intro2024.jpg";
 import careercafe2026feb from "../assets/events/careercafe2026feb.png";
 import careercafe2026apr from "../assets/events/careercafe2026apr.png";
-import findyourmatch from "../assets/events/findyourmatch2025oct.png";
 
 export interface Event {
   id: string;
