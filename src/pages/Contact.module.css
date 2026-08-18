@@ -6,3 +6,9 @@
 
   padding: 0 150px;
 }
+
+@media (max-width: 768px) {
+  .contactContainer {
+    padding: 0 20px 60px 20px;
+  }
+}

@@ -1,12 +1,18 @@
 import type { Members } from "../../content/members";
 import styles from "./MemberCard.module.css";
 import placeholder from "../../assets/members/member-placeholder.png";
+import { Link } from "react-router";
 
-export default function MemberCard({ name, role, photoUrl }: Members) {
+export default function MemberCard({
+  name,
+  role,
+  photoUrl,
+  linkedin,
+}: Members) {
   const photo = photoUrl ? photoUrl : placeholder;
 
   return (
-    <div
+    <Link
       className={styles.memberCard}
       style={{
         backgroundImage: `url(${photo})`,
@@ -14,7 +20,11 @@ export default function MemberCard({ name, role, photoUrl }: Members) {
         backgroundPosition: "center",
         position: "relative",
         overflow: "hidden",
+        textDecoration: "none",
       }}
+      to={linkedin || "#"}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <div
         style={{
@@ -34,6 +44,6 @@ export default function MemberCard({ name, role, photoUrl }: Members) {
         <h4>{name}</h4>
         <h5>{role}</h5>
       </div>
-    </div>
+    </Link>
   );
 }
