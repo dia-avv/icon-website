@@ -10,6 +10,8 @@ import djof2024 from "../assets/events/djof2024.jpg";
 import alumni2024 from "../assets/events/alumni2024.jpg";
 import intro2024 from "../assets/events/intro2024.jpg";
 import careercafe2026feb from "../assets/events/careercafe2026feb.png";
+import careercafe2026apr from "../assets/events/careercafe2026apr.png";
+import findyourmatch from "../assets/events/findyourmatch2025oct.png";
 
 export interface Event {
   id: string;
@@ -22,19 +24,27 @@ export interface Event {
   registrationLink?: string;
 }
 
-export const upcomingEvents: Event[] = [
+export const upcomingEvents: Event[] = [];
+
+export const pastEvents: Event[] = [
   {
     id: "The Career Cafe",
     title: "The Career Cafe",
-    date: "12 February 2025",
+    date: "21 Aril 2026",
     partner: "ICON & Studenterhus Aarhus",
     description:
       "Grab your CV, cover letter, bring any sneaking questions, and enjoy the evening full of stories and insights from internationals leading their careers in Denmark!",
+    image: careercafe2026apr,
+  },
+  {
+    id: "The Career Cafe",
+    title: "The Career Cafe",
+    date: "12 February 2026",
+    partner: "ICON & Studenterhus Aarhus",
+    description:
+      "We kicked off 2026 with an inspiring Career Café in collab with Studenterhus Aarhus. Participants connected with people who really know struggles of international career in Denmark - got feedback on CVs and cover letters, and gained practical insights into the Danish job market.",
     image: careercafe2026feb,
   },
-];
-
-export const pastEvents: Event[] = [
   {
     id: "InCommodities X ICON",
     title: "InCommodities X ICON",

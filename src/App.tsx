@@ -9,10 +9,12 @@ import StoryDetails from "./pages/StoryDetails";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Partners from "./pages/Partners";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Layout>
+      <ScrollToTop />
       <Routes>
         <Route path="*" element={<div>Not Found</div>} />
         <Route path="/" element={<Homepage />} />

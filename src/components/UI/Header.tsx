@@ -15,7 +15,9 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <img src="/logo.png" alt="ICON Logo" className={styles.logo} />
+      <NavLink to="/" onClick={handleNavClick} aria-label="Go to homepage">
+        <img src="/logo.png" alt="ICON Logo" className={styles.logo} />
+      </NavLink>
       <button
         className={styles.burger}
         onClick={() => setIsOpen(!isOpen)}
