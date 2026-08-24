@@ -29,7 +29,7 @@ export const pastEvents: Event[] = [
   {
     id: "The Career Cafe",
     title: "The Career Cafe",
-    date: "21 Aril 2026",
+    date: "21 April 2026",
     partner: "ICON & Studenterhus Aarhus",
     description:
       "Grab your CV, cover letter, bring any sneaking questions, and enjoy the evening full of stories and insights from internationals leading their careers in Denmark!",
