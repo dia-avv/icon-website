@@ -1,4 +1,4 @@
-import About from "../assets/media/about.png";
+import About from "../assets/media/group2026.png";
 import ImageBlock from "../components/domain/ImageBlock/ImageBlock";
 import MissionBlock from "../components/domain/MissionBlock/MissionBlock";
 import StatsBlock from "../components/domain/StatsBlock/StatsBlock";

@@ -1,4 +1,5 @@
 import type { Event } from "../../content/events";
+import Button from "./Button";
 import styles from "./EventCard.module.css";
 
 export default function EventCard({
@@ -7,10 +8,11 @@ export default function EventCard({
   description,
   image,
   partner,
+  registrationLink,
 }: Event) {
   return (
     <div className={styles.eventCard}>
-      <img src={image} alt={title} loading="lazy"/>
+      <img src={image} alt={title} loading="lazy" />
       <div className={styles.eventInfo}>
         <h4>{title}</h4>
         <p>{description}</p>
@@ -18,6 +20,12 @@ export default function EventCard({
       <div className={styles.eventFooter}>
         <h5>{date}</h5>
         <p>With {partner}</p>
+        {registrationLink && (
+          <Button
+            onClick={() => window.open(registrationLink, "_blank")}
+            label="Sign up"
+          />
+        )}
       </div>
     </div>
   );

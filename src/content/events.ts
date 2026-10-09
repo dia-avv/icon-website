@@ -11,6 +11,7 @@ import alumni2024 from "../assets/events/alumni2024.jpg";
 import intro2024 from "../assets/events/intro2024.jpg";
 import careercafe2026feb from "../assets/events/careercafe2026feb.png";
 import careercafe2026apr from "../assets/events/careercafe2026apr.png";
+import incommodities2026 from "../assets/events/incommodities2026.jpeg";
 
 export interface Event {
   id: string;
@@ -23,7 +24,19 @@ export interface Event {
   registrationLink?: string;
 }
 
-export const upcomingEvents: Event[] = [];
+export const upcomingEvents: Event[] = [
+  {
+    id: "Incommodities X ICON 2026",
+    title: "Incommodities X ICON 2026",
+    date: "22 October 2026",
+    partner: "ICON & InCommodities",
+    description:
+      "Visit InCommodities to explore career opportunities in energy trading. Meet international colleagues, tour the office and trading floor, take on a LEGO energy-system challenge, and wrap up the afternoon with dinner and networking.",
+    image: incommodities2026,
+    registrationLink:
+      "https://luma.com/lf74xuzw?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadJ_vDldk6kpyuUjdDQCYUXHErBnkQci826I8YtNSMsxWzSU930iC4PoO89bg_aem_7M-LroEjGlIHqtsldt7eSg&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3&utm_medium=social&utm_source=ig",
+  },
+];
 
 export const pastEvents: Event[] = [
   {
