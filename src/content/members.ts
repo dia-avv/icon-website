@@ -1,10 +1,10 @@
 import juliab from "../assets/members/juliab.jpg";
 import zuza from "../assets/members/zuza.jpg";
 import andreea from "../assets/members/andreea.jpg";
-import mark from "../assets/members/mark.jpg";
+//import mark from "../assets/members/mark.jpg";
 import zsofi from "../assets/members/zsofi.jpg";
 import bence from "../assets/members/bence.jpg";
-import virag from "../assets/members/virag.jpg";
+//import virag from "../assets/members/virag.jpg";
 import reka from "../assets/members/reka.jpg";
 
 export interface Members {
