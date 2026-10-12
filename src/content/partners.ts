@@ -4,6 +4,8 @@ import studenterhusAarhus from "../assets/partners/studenterhus-logo.png";
 import startupAarhus from "../assets/partners/startup-logo.jpg";
 import djof from "../assets/partners/djof-logo.png";
 import helloaarhus from "../assets/partners/hello-logo.png";
+import bestseller from "../assets/partners/bestseller-logo.png";
+import incommodities from "../assets/partners/inc-logo.png";
 
 export interface Partners {
   id: string;
@@ -15,6 +17,24 @@ export interface Partners {
 }
 
 export const partnerCompanies: Partners[] = [
+  {
+    id: "Bestseller",
+    name: "Bestseller",
+    description:
+      "Bestseller is a family-owned fashion company founded in Denmark in 1975. It designs, produces and sells clothing and accessories under various brands, including Vero Moda, Jack & Jones, Only, Selected and Pieces. Bestseller operates in more than 70 countries and has over 3,000 stores worldwide.",
+    logo: bestseller,
+    website: "https://www.bestseller.com/",
+    altText: "Bestseller",
+  },
+  {
+    id: "Incommodities",
+    name: "Incommodities",
+    description:
+      "Incommodities is a Danish company that specializes in the development and production of innovative solutions for the energy sector. With a focus on sustainability and efficiency, Incommodities aims to provide cutting-edge technology to meet the growing demands of the energy market.",
+    logo: incommodities,
+    website: "https://www.incommodities.com/",
+    altText: "Incommodities",
+  },
   {
     id: "Understory",
     name: "Understory",
