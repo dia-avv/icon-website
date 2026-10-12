@@ -12,7 +12,7 @@ export default function Footer() {
         <div className={styles.links}>
           <p className={styles.link}>info@iconaarhus.com</p>
           <p className={styles.link}>
-            Fuglesangs Allé 4, 8210<br></br>Aarhus, Denmark
+            Bartholins Allé 10, 8000<br></br>Aarhus, Denmark
           </p>
         </div>
       </div>
