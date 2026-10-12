@@ -12,6 +12,7 @@ import intro2024 from "../assets/events/intro2024.jpg";
 import careercafe2026feb from "../assets/events/careercafe2026feb.png";
 import careercafe2026apr from "../assets/events/careercafe2026apr.png";
 import incommodities2026 from "../assets/events/incommodities2026.jpeg";
+import ibtbestseller from "../assets/events/ibt-bestseller.png";
 
 export interface Event {
   id: string;
@@ -35,6 +36,17 @@ export const upcomingEvents: Event[] = [
     image: incommodities2026,
     registrationLink:
       "https://luma.com/lf74xuzw?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadJ_vDldk6kpyuUjdDQCYUXHErBnkQci826I8YtNSMsxWzSU930iC4PoO89bg_aem_7M-LroEjGlIHqtsldt7eSg&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3&utm_medium=social&utm_source=ig",
+  },
+  {
+    id: "IBT Bestseller",
+    title: "Life as an International Business Trainee (IBT)",
+    date: "11 November 2026",
+    partner: "ICON & BESTSELLER",
+    description:
+      "Meet current and former IBTs, learn about the programme and get a taste of what starting your career at BESTSELLER looks like, with time for questions, networking and dinner.",
+    image: ibtbestseller,
+    registrationLink:
+      "https://l.instagram.com/?u=https%3A%2F%2Fluma.com%2Fc7a9j8ms%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAaeFHZBs_4zMG1_SOINMXz1zyeGgO6dTPyTqMegktv5qYyTKNrODx6z4oUeGyQ_aem_AkC9CUZGXegKcmkwVl8l0w%26utm_id%3D97760_v0_s00_e0_tv3&e=AUBMxdJWfXZ5QLzjCFDJaHCiOb0OLGbzI2clCIo-VzPGPrs99YftxQVbqkXqmph_zN6ZSz51_1PicGwFruc-cZcxmcdypT4IszXrNp7lM8yTaAgjL-K8ZEZkl3lyVgnAeyvQ2q-EreoZ",
   },
 ];
 
